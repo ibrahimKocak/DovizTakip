@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DovizTakip</string>
+    <string name="main_tv_update_info">\n</string>
+    <string name="main_tv_update_info_dolar" />
+    <string name="bt_update">GÜNCELLE</string>
+    <string name="button_Convert">Dönüştür</string>
+    <string name="button_Log">Kur Geçmişi</string>
+    <string name="tl">TL</string>
+    <string name="kuru_kaydet">Kuru kaydet</string>
+
+    <string-array name="foreign_currency">
+        <item>Dolar</item>
+        <item>Euro</item>
+        <item>TL</item>
+    </string-array>
+
+    <string-array name="foreign_currency_list">
+        <item>Dolar</item>
+        <item>Euro</item>
+    </string-array>
+
+
+</resources>

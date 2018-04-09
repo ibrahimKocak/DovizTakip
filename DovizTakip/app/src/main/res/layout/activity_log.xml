@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAF9F"
+    tools:context="com.example.ibrah.doviztakip.LogActivity"
+    android:orientation="vertical">
+
+    <Spinner
+        android:textAlignment="center"
+        android:id="@+id/log_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <ListView
+        android:background="#FFDDBD"
+        android:id="@+id/log_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

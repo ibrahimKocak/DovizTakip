@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="top"
+    android:background="#FFDDBD"
+    tools:context="com.example.ibrah.doviztakip.MainActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="2dp"
+            android:padding="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="12sp"
+            android:id="@+id/main_tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_tv_update_info"/>
+
+        <TextView
+            android:padding="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text=""
+            android:textSize="20sp"
+            android:id="@+id/main_tv_update_dolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text=""
+            android:textSize="20sp"
+            android:id="@+id/main_tv_update_euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:background="@android:color/holo_green_light"
+            android:text="@string/bt_update"
+            android:onClick="main_update_onclick"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_weight="3"
+            android:id="@+id/main_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/main_et_convert_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_weight="3"
+            android:id="@+id/main_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <EditText
+            android:enabled="false"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/main_et_convert_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginBottom="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="main_Convert_onclick"
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:id="@+id/main_bt_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_Convert"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#FFAF9F"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:layout_margin="5dp"
+            android:onClick="main_add_log_onclick"
+            android:textSize="12sp"
+            android:id="@+id/main_bt_add_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kuru_kaydet"/>
+
+        <Button
+            android:background="#FFAF9F"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:layout_margin="5dp"
+            android:onClick="main_wiev_log_onclick"
+            android:textSize="12sp"
+            android:id="@+id/main_bt_view_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_Log"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
